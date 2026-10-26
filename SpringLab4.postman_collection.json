@@ -1,0 +1,208 @@
+{
+  "info": {
+    "_postman_id": "2c58f98e-4328-4b90-84a5-4da938869b9f",
+    "name": "SpringLab4",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59205656",
+    "_collection_link": "https://go.postman.co/collection/59205656-2c58f98e-4328-4b90-84a5-4da938869b9f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Вызов воинских званий",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "JSON-массив всех военнослужащих",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Получение военнослужащего по id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Создание нового военнослужащего через DTO",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"surname\": \"Громов\",\r\n  \"name\": \"Илья\",\r\n  \"patronymic\": \"Викторович\",\r\n  \"nationality\": \"Русский\",\r\n  \"birthDate\": \"1996-05-14\",\r\n  \"position\": \"Командир взвода\",\r\n  \"rankTitle\": \"Лейтенант\",\r\n  \"addressId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/servicemen",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "servicemen"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Полное обновление записи",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"surname\": \"Иванов\",\r\n  \"name\": \"Иван\",\r\n  \"patronymic\": \"Иванович\",\r\n  \"nationality\": \"Русский\",\r\n  \"birthDate\": \"1990-03-20\",\r\n  \"position\": \"Начальник штаба\",\r\n  \"rankTitle\": \"Майор\",\r\n  \"addressId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/servicemen/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "servicemen",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Частичное обновление данных",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"position\": \"Командир батальона\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/servicemen/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "servicemen",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Повышение в звании",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"newRank\": \"Майор\",\r\n  \"newPosition\": \"Заместитель командира полка\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/servicemen/1/promote",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "servicemen",
+            "1",
+            "promote"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Получение статистики и аналитики",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Удаление военнослужащего",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Проверка удаления",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
