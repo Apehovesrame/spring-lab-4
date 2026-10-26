@@ -1,7 +1,7 @@
-package ru.kafpin.springlab3.repository;
+package ru.kafpin.springlab4.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import ru.kafpin.springlab3.model.Serviceman;
+import ru.kafpin.springlab4.model.Serviceman;
 
 import java.util.List;
 

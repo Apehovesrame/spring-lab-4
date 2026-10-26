@@ -1,4 +1,4 @@
-package ru.kafpin.springlab3;
+package ru.kafpin.springlab4;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

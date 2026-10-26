@@ -1,7 +1,10 @@
 -- Заполняем справочник званий
+INSERT INTO ranks (title) VALUES ('Рядовой');
 INSERT INTO ranks (title) VALUES ('Лейтенант');
 INSERT INTO ranks (title) VALUES ('Майор');
-INSERT INTO ranks (title) VALUES ('Рядовой');
+INSERT INTO ranks (title) VALUES ('Подполковник');
+INSERT INTO ranks (title) VALUES ('Полковник');
+INSERT INTO ranks (title) VALUES ('Генерал майор');
 
 INSERT INTO addresses (post_index, country, region, district, city, street, house, apartment)
 VALUES ('602267', 'Россия', 'Владимирская область', 'Муромский', 'Муром', 'Орловская', '23', '15');

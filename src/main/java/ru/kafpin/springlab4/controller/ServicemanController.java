@@ -1,12 +1,12 @@
-package ru.kafpin.springlab3.controller;
+package ru.kafpin.springlab4.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ru.kafpin.springlab3.model.Serviceman;
-import ru.kafpin.springlab3.repository.ServicemanRepository;
-import ru.kafpin.springlab3.repository.RankRepository;
-import ru.kafpin.springlab3.repository.AddressRepository;
+import ru.kafpin.springlab4.model.Serviceman;
+import ru.kafpin.springlab4.repository.ServicemanRepository;
+import ru.kafpin.springlab4.repository.RankRepository;
+import ru.kafpin.springlab4.repository.AddressRepository;
 
 import java.util.Optional;
 

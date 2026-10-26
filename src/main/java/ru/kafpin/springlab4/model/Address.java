@@ -1,7 +1,8 @@
-package ru.kafpin.springlab3.model;
+package ru.kafpin.springlab4.model;
 
 import jakarta.persistence.*;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 @Table(name = "addresses")
@@ -20,6 +21,7 @@ public class Address {
     private String apartment;
 
     @OneToMany(mappedBy = "address", cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE}, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonBackReference
     private List<Serviceman> servicemen;
 
     public Address() {}

@@ -1,7 +1,8 @@
-package ru.kafpin.springlab3.model;
+package ru.kafpin.springlab4.model;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "servicemen")
@@ -23,10 +24,12 @@ public class Serviceman {
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "rank_id", nullable = false)
+    @JsonManagedReference
     private Rank rank;
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "address_id", nullable = false)
+    @JsonManagedReference
     private Address address;
 
     public Serviceman() {}
