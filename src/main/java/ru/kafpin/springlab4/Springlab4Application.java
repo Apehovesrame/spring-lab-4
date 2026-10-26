@@ -1,4 +1,4 @@
-package ru.kafpin.springlab3;
+package ru.kafpin.springlab4;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
